@@ -11,7 +11,6 @@ import java.util.stream.Collectors;
 import java.util.Comparator;
 
 
-import entities.Personne;
 import utils.DataSource;
 /**
  *
@@ -106,9 +105,6 @@ public class ServiceEvenement implements IService<Evenement> {
     public List<Evenement> getAllByName(String nom,List<Evenement> list) {
         return list.stream().filter(e -> e.getNom().contains(nom)).collect(Collectors.toList());
 }
-    public List<Evenement> getAllByUser(Personne personne, List<Evenement> list) {
-        return list.stream().filter(e -> e.getcreateur().getId()==personne.getId()).collect(Collectors.toList());
-    }
 public int getId(Evenement evenement) {
     List<Evenement> list = getAll();
     Evenement ev = list.stream()
