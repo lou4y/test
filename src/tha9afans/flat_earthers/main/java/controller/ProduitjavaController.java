@@ -122,7 +122,7 @@ public class ProduitjavaController implements Initializable {
 
     private void load() throws IOException {
         event_grid.getChildren().clear();
-        System.out.println(liste);
+        //System.out.println(liste);
         int col = 0;
         int row = 1;
         try {

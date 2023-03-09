@@ -140,7 +140,7 @@ public class ModifierprofileController implements Initializable {
 
     public void eventsbutton(MouseEvent event) throws IOException {
         ap.setVisible(false);
-        loadPage("/test/EditEvenementList");
+        loadPage("/test/securiteprofile");
     }
 
     private void loadPage(String page) throws IOException {
