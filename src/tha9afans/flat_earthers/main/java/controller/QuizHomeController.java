@@ -29,7 +29,7 @@ public class QuizHomeController implements Initializable {
     public void switchToAddQuestion() throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("/test/AddQuestion.fxml"));
         Stage window=(Stage) addQuestion.getScene().getWindow();
-        window.setScene(new Scene(root,1400, 700));
+        window.setScene(new Scene(root,600,400));
         window.setTitle("");
 
     }
@@ -37,15 +37,7 @@ public class QuizHomeController implements Initializable {
     public void switchToDeleteQuestion() throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("/test/UpdateDeleteQuestion.fxml"));
         Stage window=(Stage) addQuestion.getScene().getWindow();
-        window.setScene(new Scene(root,1400, 700));
-        window.setTitle("");
-
-    }
-
-    public void switchToDeleteQuiz() throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("/test/DeleteQuiz.fxml"));
-        Stage window=(Stage) addQuestion.getScene().getWindow();
-        window.setScene(new Scene(root,1400, 700));
+        window.setScene(new Scene(root,600,400));
         window.setTitle("");
 
     }
@@ -53,7 +45,7 @@ public class QuizHomeController implements Initializable {
     public void switchToAddQuiz() throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("/test/QuizQuestion.fxml"));
         Stage window=(Stage) addQuestion.getScene().getWindow();
-        window.setScene(new Scene(root,1400, 700));
+        window.setScene(new Scene(root,600,400));
         window.setTitle("");
 
     }
@@ -66,7 +58,7 @@ public class QuizHomeController implements Initializable {
             captchaController.verify();
         });
         Stage window = (Stage) playQuizHome.getScene().getWindow();
-        window.setScene(new Scene(root, 1400, 700));
+        window.setScene(new Scene(root, 600, 400));
         window.setTitle("");
     }
 

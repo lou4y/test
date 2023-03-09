@@ -113,7 +113,8 @@ public class ServicesQuiz implements Services<Quiz> {
                 q.setQuiz_name(rs.getString("quiz_name"));
                 q.setNumber_of_questions(rs.getInt("nbr_questions"));
                 q.setQuiz_description(rs.getString("quiz_description"));
-                q.setQuiz_cover(rs.getBlob("quiz_cover").getBinaryStream());
+                q.setQuiz_cover((InputStream) rs.getBlob("quiz_cover"));
+
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
